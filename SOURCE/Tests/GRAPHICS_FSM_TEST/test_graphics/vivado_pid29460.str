@@ -1,0 +1,927 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 29460
+License: Customer
+
+Current time: 	Wed May 01 05:21:25 MDT 2024
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 3
+Available disk space: 68 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	kaush
+User home directory: C:/Users/kaush
+User working directory: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/kaush/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/kaush/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/kaush/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/vivado.log
+Vivado journal file location: 	C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/vivado.jou
+Engine tmp dir: 	C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/.Xil/Vivado-29460-Dans_Surface
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	170 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 525 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\kaush\Documents\ECE383_Dan\Final_Project\Tests\FSM_TEST\test_graphics\test_graphics.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 80 MB (+81926kb) [00:00:11]
+// [Engine Memory]: 508 MB (+380725kb) [00:00:11]
+// Tcl Message: open_project C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/test_graphics.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 535 MB. GUI used memory: 37 MB. Current time: 5/1/24 5:21:27 AM MDT
+// [Engine Memory]: 535 MB (+1970kb) [00:00:16]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 579 MB (+17755kb) [00:00:18]
+// Tcl Message: open_project C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/test_graphics.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/kaush/Documents/ECE383_Dan/Final_Project_Play_Area/FSM_TEST/test_graphics' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 803.730 ; gain = 97.141 
+// [Engine Memory]: 624 MB (+17631kb) [00:00:22]
+// Project name: test_graphics; location: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics; part: xc7a200tsbg484-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 30 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd), datapath : graphics_datapath(Behavioral) (graphics_datapath.vhd)]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd), datapath : graphics_datapath(Behavioral) (graphics_datapath.vhd), video_inst : video(structure) (video.vhdl)]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd), datapath : graphics_datapath(Behavioral) (graphics_datapath.vhd), video_inst : video(structure) (video.vhdl), inst_dvid : dvid(Behavioral) (dvid.vhdl)]", 6); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd), datapath : graphics_datapath(Behavioral) (graphics_datapath.vhd), video_inst : video(structure) (video.vhdl), Inst_vga : vga(Behavioral) (vga.vhd)]", 5); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd), datapath : graphics_datapath(Behavioral) (graphics_datapath.vhd), video_inst : video(structure) (video.vhdl), Inst_vga : vga(Behavioral) (vga.vhd), Inst_scopeFace : scopeFace(Behavioral) (scopeFace.vhd)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd), datapath : graphics_datapath(Behavioral) (graphics_datapath.vhd), video_inst : video(structure) (video.vhdl), Inst_vga : vga(Behavioral) (vga.vhd), Inst_scopeFace : scopeFace(Behavioral) (scopeFace.vhd)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scopeFace.vhd", 1); // k (j, ck)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scopeFace.vhd", 1, false, true); // k (j, ck) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("scopeFace.vhd", 692, 433); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 600, 431); // ce (w, ck)
+// [GUI Memory]: 94 MB (+9930kb) [00:01:25]
+// Elapsed time: 17 seconds
+selectCodeEditor("scopeFace.vhd", 0, 895); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 4, 446); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 15, 535); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 15, 535, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("scopeFace.vhd", 426, 587); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 426, 587, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("scopeFace.vhd", 435, 583); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 435, 583, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 44 seconds
+selectCodeEditor("scopeFace.vhd", 430, 602); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 430, 602, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 35 seconds
+selectCodeEditor("scopeFace.vhd", 279, 623); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 451, 702); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 451, 702, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("scopeFace.vhd", 498, 702); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 500, 701); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 466, 718); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 466, 727); // ce (w, ck)
+// Elapsed time: 83 seconds
+selectCodeEditor("scopeFace.vhd", 459, 886); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+// [GUI Memory]: 110 MB (+12278kb) [00:05:23]
+selectCodeEditor("scopeFace.vhd", 422, 822); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, ck)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("scopeFace.vhd", 505, 1011); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 253, 1012); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 482, 1269); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 452, 1259); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 452, 1259, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("scopeFace.vhd", 495, 1261); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 509, 1270); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 448, 1282); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 503, 1280); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 504, 1280); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 396, 1312); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 337, 1296); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 463, 1299); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 468, 1336); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 511, 1331); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 454, 1352); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 511, 1348); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 455, 1369); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 500, 1366); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 508, 1376); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 503, 1378); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 463, 1398); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 481, 1485); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 477, 793); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 574, 1190); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 644 MB. GUI used memory: 47 MB. Current time: 5/1/24 5:28:57 AM MDT
+// Elapsed time: 16 seconds
+selectCodeEditor("scopeFace.vhd", 291, 961); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 291, 961, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("scopeFace.vhd", 508, 364); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 469, 334); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("scopeFace.vhd", 280, 333); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 322, 306); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 468, 331); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 508, 674); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 510, 359); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 461, 990); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 280, 979); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 442, 1042); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 509, 859); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 484, 1096); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 279, 1049); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("scopeFace.vhd", 264, 1071); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 132, 906); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("scopeFace.vhd", 292, 1539); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 292, 1539, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 302, 903); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 302, 903, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 291, 924); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 291, 924, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 297, 937); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 297, 937, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 964); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 964, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 300, 977); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 300, 977, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 300, 997); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 300, 997, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1012); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1012, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1027); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1027, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1045); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1045, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1064); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1064, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1080); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1080, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1096); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1096, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 297, 1113); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 297, 1113, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 297, 1135); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 297, 1135, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 299, 1150); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 299, 1150, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1165); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1165, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 296, 1182); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 296, 1182, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 292, 1199); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 292, 1199, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 292, 1214); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 292, 1214, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 294, 1226); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 294, 1226, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1253); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1253, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1271); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1271, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 297, 1285); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 297, 1285, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 296, 1299); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 296, 1300, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 294, 1321); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 294, 1321, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 297, 1333); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 297, 1333, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1348); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 298, 1348, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1365); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1365, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 300, 1386); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 300, 1386, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1403); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1403, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1416); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 302, 1416, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 301, 1427); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 300, 1428, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 485, 1430); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("scopeFace.vhd", 235, 1471); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 256, 1474); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 467, 888); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 427, 1505); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 427, 1505, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 453, 888); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 453, 888, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 432, 1525); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 432, 1525, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 453, 907); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 453, 907, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 434, 1536); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 434, 1536, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 448, 927); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 448, 927, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 521, 965); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 302, 922); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("scopeFace.vhd", 498, 890); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 559, 1007); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("scopeFace.vhd", 429, 434); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 481, 487); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 463, 701); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 255, 689); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 377, 760); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 395, 802); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("scopeFace.vhd", 505, 811); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 482, 759); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 492, 667); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 369, 774); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 514, 1107); // ce (w, ck)
+// Elapsed time: 38 seconds
+selectCodeEditor("scopeFace.vhd", 330, 967); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 378, 399); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 373, 419); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 371, 432); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 371, 452); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 371, 469); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 373, 489); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 371, 502); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 370, 520); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 370, 537); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 369, 555); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("scopeFace.vhd", 432, 572); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("scopeFace.vhd", 480, 656); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 470, 706); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 278, 674); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 492, 738); // ce (w, ck)
+// Elapsed time: 33 seconds
+selectCodeEditor("scopeFace.vhd", 303, 722); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("scopeFace.vhd", 498, 893); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 466, 1254); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 461, 1236); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 462, 1213); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 463, 1195); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 461, 1181); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 459, 1161); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 459, 1146); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 462, 1128); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 462, 1113); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 461, 1096); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 508, 1081); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 510, 1058); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 484, 806); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 279, 826); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 515, 972); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 512, 965); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 337, 1023); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("scopeFace.vhd", 458, 770); // ce (w, ck)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 461, 632); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 254, 583); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 382, 801); // ce (w, ck)
+// Elapsed time: 40 seconds
+selectCodeEditor("scopeFace.vhd", 449, 858); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 449, 858, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("scopeFace.vhd", 490, 857); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 488, 859); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 503, 857); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 504, 854); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 469, 871); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 462, 871); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 466, 871); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 462, 891); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("scopeFace.vhd", 510, 895); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("scopeFace.vhd", 529, 901); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 251, 937); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 249, 946); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 445, 1302); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 445, 1302, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("scopeFace.vhd", 504, 1331); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 222, 1046); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("scopeFace.vhd", 45, 690); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 50, 688); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 61, 690); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 61, 690, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 496, 572); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 496, 572, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 290, 1427); // ce (w, ck)
+// Elapsed time: 294 seconds
+selectCodeEditor("scopeFace.vhd", 449, 588); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 421, 588); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("scopeFace.vhd", 292, 603); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 113, 606); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 158, 601); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 120, 348); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 120, 604); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 38 seconds
+selectCodeEditor("scopeFace.vhd", 56, 605); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("scopeFace.vhd", 54, 601); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("scopeFace.vhd", 489, 584); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 88, 634); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+// [GUI Memory]: 116 MB (+191kb) [00:29:05]
+// Elapsed time: 351 seconds
+selectCodeEditor("scopeFace.vhd", 96, 607); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("scopeFace.vhd", 521, 584); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("scopeFace.vhd", 480, 606); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 362, 609); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 362, 609, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("scopeFace.vhd", 44, 1026); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 44, 1026, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 374, 296); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 374, 296, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 542, 297); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 474, 635); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 426, 637); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 110, 651); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 432, 998); // ce (w, ck)
+typeControlKey((HResource) null, "scopeFace.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 89, 1008); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 112, 653); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 207, 701); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 277, 687); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectCodeEditor("scopeFace.vhd", 331, 1102); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 331, 1102, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "scopeFace.vhd", 'c'); // ce (w, ck)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd), control : graphics_fsm(Behavioral) (graphics_fsm.vhd)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd), control : graphics_fsm(Behavioral) (graphics_fsm.vhd)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_fsm.vhd", 2); // k (j, ck)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_fsm.vhd", 2, false, true); // k (j, ck) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_fsm.vhd", 2); // k (j, ck)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_fsm.vhd", 2, false, true); // k (j, ck) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("graphics_fsm.vhd", 649, 1027); // ce (w, ck)
+typeControlKey((HResource) null, "graphics_fsm.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("graphics_fsm.vhd", 617, 1029); // ce (w, ck)
+selectCodeEditor("graphics_fsm.vhd", 617, 1029, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "graphics_fsm.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("graphics_fsm.vhd", 381, 758); // ce (w, ck)
+selectCodeEditor("graphics_fsm.vhd", 381, 758, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "graphics_fsm.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("graphics_fsm.vhd", 460, 803); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 663 MB (+7334kb) [00:35:25]
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May  1 05:56:36 2024] Launched synth_1... Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/test_graphics.runs/synth_1/runme.log [Wed May  1 05:56:36 2024] Launched impl_1... Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/test_graphics.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 663 MB. GUI used memory: 84 MB. Current time: 5/1/24 5:56:37 AM MDT
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 238ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 196 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// [Engine Memory]: 1,330 MB (+665236kb) [00:38:51]
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689238B 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,331 MB. GUI used memory: 54 MB. Current time: 5/1/24 6:00:03 AM MDT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/test_graphics.runs/impl_1/graphics.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/test_graphics.runs/impl_1/graphics.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1515.172 ; gain = 0.023 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_fsm.vhd", 1); // k (j, ck)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_fsm.vhd", 1, false, true); // k (j, ck) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// Elapsed time: 19 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scopeFace.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_fsm.vhd", 2); // k (j, ck)
+selectCodeEditor("graphics_fsm.vhd", 37, 689); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("graphics_fsm.vhd", 571, 953); // ce (w, ck)
+selectCodeEditor("graphics_fsm.vhd", 418, 944); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd), datapath : graphics_datapath(Behavioral) (graphics_datapath.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd), datapath : graphics_datapath(Behavioral) (graphics_datapath.vhd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_datapath.vhd", 3); // k (j, ck)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_datapath.vhd", 3, false, true); // k (j, ck) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_datapath.vhd", 3); // k (j, ck)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_datapath.vhd", 3, false, true); // k (j, ck) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "scopeFace.vhd", 1); // k (j, ck)
+selectCodeEditor("scopeFace.vhd", 618, 920); // ce (w, ck)
+selectCodeEditor("scopeFace.vhd", 347, 792); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_fsm.vhd", 2); // k (j, ck)
+selectCodeEditor("graphics_fsm.vhd", 418, 512); // ce (w, ck)
+selectCodeEditor("graphics_fsm.vhd", 651, 793); // ce (w, ck)
+selectCodeEditor("graphics_fsm.vhd", 660, 863); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed May  1 06:03:18 2024] Launched synth_1... Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/test_graphics.runs/synth_1/runme.log [Wed May  1 06:03:18 2024] Launched impl_1... Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/test_graphics.runs/impl_1/runme.log 
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, graphics(behavior) (graphics.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics.vhd", 4); // k (j, ck)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics.vhd", 4, false, true); // k (j, ck) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics.vhd", 4); // k (j, ck)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics.vhd", 4, false, true); // k (j, ck) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_datapath.vhd", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "graphics_fsm.vhd", 2); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 25 seconds
+selectCodeEditor("graphics_fsm.vhd", 477, 553); // ce (w, ck)
+selectCodeEditor("graphics_fsm.vhd", 620, 615); // ce (w, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 121 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689238B 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/test_graphics.runs/impl_1/graphics.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/FSM_TEST/test_graphics/test_graphics.runs/impl_1/graphics.bit} [get_hw_devices xc7a200t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a200t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1528.172 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bx (ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify

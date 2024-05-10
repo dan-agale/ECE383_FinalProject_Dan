@@ -1,0 +1,11 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/SOURCE/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.srcs/sources_1/new/ir_dp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ir_dp
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/SOURCE/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.srcs/sources_1/new/ir_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ir_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/SOURCE/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.srcs/sources_1/new/ir_top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ir_test
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/SOURCE/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.srcs/sim_1/new/ir_testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ir_test_tb
+ERROR: [VRFC 10-2666] formal port flag has no actual or default value [C:/Users/kaush/Documents/ECE383_Dan/Final_Project/SOURCE/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.srcs/sim_1/new/ir_testbench.vhd:18]
+ERROR: [VRFC 10-1504] unit sim ignored due to previous errors [C:/Users/kaush/Documents/ECE383_Dan/Final_Project/SOURCE/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.srcs/sim_1/new/ir_testbench.vhd:7]
+INFO: [VRFC 10-240] VHDL file C:/Users/kaush/Documents/ECE383_Dan/Final_Project/SOURCE/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.srcs/sim_1/new/ir_testbench.vhd ignored due to errors

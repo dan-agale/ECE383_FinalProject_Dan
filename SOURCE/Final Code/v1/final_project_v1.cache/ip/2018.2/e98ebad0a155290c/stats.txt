@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Tue Apr 30 06:14:58 UTC 2024
+VLNV: xilinx.com:user:my_graphics_ip:1.0
+SynthRuntime: 30

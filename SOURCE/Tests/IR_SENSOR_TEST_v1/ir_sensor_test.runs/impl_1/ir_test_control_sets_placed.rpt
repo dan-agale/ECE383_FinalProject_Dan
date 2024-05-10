@@ -1,0 +1,71 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue May  7 16:05:45 2024
+| Host         : Dans_Surface running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ir_test_control_sets_placed.rpt
+| Design       : ir_test
+| Device       : xc7a200t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |    14 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      8 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               2 |            1 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             102 |           14 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+---------------------------------------------+---------------------------+------------------+----------------+
+|          Clock Signal         |                Enable Signal                |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-------------------------------+---------------------------------------------+---------------------------+------------------+----------------+
+|  ir_dp_inst/sw_reg[1]/G0      |                                             |                           |                1 |              2 |
+|  ir_dp_inst/sw_reg[1]_i_1_n_0 |                                             | ir_dp_inst/comp1000       |                1 |              2 |
+|  clk_IBUF_BUFG                | ir_fsm_inst/FSM_sequential_state[3]_i_2_n_0 | ir_dp_inst/SR[0]          |                1 |              8 |
+|  clk_IBUF_BUFG                | ir_fsm_inst/cw_sig[1]                       | ir_dp_inst/SR[0]          |                5 |             30 |
+|  clk_IBUF_BUFG                | ir_fsm_inst/i_sig                           | ir_fsm_inst/i_sig_reg[31] |                8 |             64 |
++-------------------------------+---------------------------------------------+---------------------------+------------------+----------------+
+
+

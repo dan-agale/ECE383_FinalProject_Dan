@@ -1,0 +1,98 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun May  5 17:59:26 2024
+| Host         : DESKTOP-LTBC2PA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab4_control_sets_placed.rpt
+| Design       : lab4
+| Device       : xc7a200t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    29 |
+| Unused register locations in slices containing registers |    78 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            4 |
+|      4 |            2 |
+|      8 |            3 |
+|     10 |            3 |
+|     14 |            4 |
+|    16+ |           13 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              46 |           16 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             254 |           38 |
+| Yes          | No                    | No                     |             118 |           19 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             216 |           35 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------------+------------------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+----------------+
+|                           Clock Signal                          |                                    Enable Signal                                   |                            Set/Reset Signal                            | Slice Load Count | Bel Load Count |
++-----------------------------------------------------------------+------------------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+----------------+
+|  slot_machine_inst/cw_slot_reg[4]_i_2_n_0                       |                                                                                    | slot_machine_inst/cw_slot_reg[4]_i_3_n_0                               |                1 |              2 |
+|  slot_machine_inst/cw_slot_reg[3]_i_2_n_0                       |                                                                                    | slot_machine_inst/cw_slot_reg[3]_i_3_n_0                               |                1 |              2 |
+|  slot_machine_inst/cw_slot_reg[2]_i_2_n_0                       |                                                                                    | slot_machine_inst/cw_slot_reg[2]_i_3_n_0                               |                1 |              2 |
+|  lab4_dp_inst/phase_inc_reg[13]_i_2_n_0                         |                                                                                    | lab4_dp_inst/phase_inc_reg[13]_i_3_n_0                                 |                1 |              2 |
+|  slot_machine_inst/cw_slot_reg[1]_i_2_n_0                       |                                                                                    | slot_machine_inst/FSM_onehot_state_reg_n_0_[14]                        |                1 |              4 |
+|  lab4_dp_inst/phase_inc_reg[12]_i_2_n_0                         |                                                                                    | lab4_dp_inst/phase_inc_reg[12]_i_3_n_0                                 |                1 |              4 |
+|  lab4_dp_inst/Audio_Codec/audiocodec_master_clock/inst/clk_out2 | lab4_dp_inst/Audio_Codec/initialize_audio/twi_controller/FSM_gray_state[3]_i_1_n_0 |                                                                        |                2 |              8 |
+|  lab4_dp_inst/Audio_Codec/audiocodec_master_clock/inst/clk_out2 | lab4_dp_inst/Audio_Codec/initialize_audio/twi_controller/E[0]                      | lab4_dp_inst/Audio_Codec/initialize_audio/SR[0]                        |                2 |              8 |
+|  lab4_dp_inst/phase_inc_reg[10]_i_2_n_0                         |                                                                                    | lab4_dp_inst/phase_inc_reg[10]_i_3_n_0                                 |                1 |              8 |
+|  clk_IBUF_BUFG                                                  |                                                                                    |                                                                        |                2 |             10 |
+|  clk_IBUF_BUFG                                                  |                                                                                    | lab4_dp_inst/Audio_Codec/audio_inout/Cnt_Bclk[4]_i_1_n_0               |                1 |             10 |
+|  clk_IBUF_BUFG                                                  | lab4_dp_inst/Audio_Codec/audio_inout/BCLK_Fall_int                                 | lab4_dp_inst/Audio_Codec/initialize_audio/SR[0]                        |                2 |             10 |
+|  lab4_dp_inst/Audio_Codec/audiocodec_master_clock/inst/clk_out2 |                                                                                    | lab4_dp_inst/Audio_Codec/initialize_audio/twi_controller/busFreeCnt0_1 |                2 |             14 |
+|  lab4_dp_inst/Audio_Codec/audiocodec_master_clock/inst/clk_out2 | lab4_dp_inst/Audio_Codec/initialize_audio/twi_controller/sclCnt[6]_i_2_n_0         | lab4_dp_inst/Audio_Codec/initialize_audio/twi_controller/sclCnt0_0     |                3 |             14 |
+|  lab4_dp_inst/Audio_Codec/audiocodec_master_clock/inst/clk_out2 | lab4_dp_inst/Audio_Codec/initialize_audio/twi_controller/initA_reg[6][0]           | lab4_dp_inst/Audio_Codec/initialize_audio/SR[0]                        |                2 |             14 |
+|  lab4_dp_inst/phase_inc_reg[9]_i_2_n_0                          |                                                                                    | lab4_dp_inst/phase_inc_reg[9]_i_3_n_0                                  |                2 |             14 |
+|  lab4_dp_inst/Audio_Codec/audiocodec_master_clock/inst/clk_out2 | lab4_dp_inst/Audio_Codec/initialize_audio/twi_controller/dataByte[7]_i_1_n_0       |                                                                        |                3 |             16 |
+|  lab4_dp_inst/Audio_Codec/audiocodec_master_clock/inst/clk_out2 | reset_n_IBUF                                                                       |                                                                        |                3 |             20 |
+|  clk_IBUF_BUFG                                                  | lab4_fsm_inst/cw_lab4[0]                                                           | lab4_dp_inst/Audio_Codec/initialize_audio/SR[0]                        |                3 |             32 |
+|  clk_IBUF_BUFG                                                  | lab4_fsm_inst/cw_lab4[1]                                                           | lab4_dp_inst/Audio_Codec/initialize_audio/SR[0]                        |                6 |             32 |
+|  clk_IBUF_BUFG                                                  | lab4_fsm_inst/next_value_reg[15][0]                                                | lab4_dp_inst/Audio_Codec/initialize_audio/SR[0]                        |                6 |             32 |
+|  clk_IBUF_BUFG                                                  | lab4_dp_inst/chirp[0]_i_2_n_0                                                      | lab4_dp_inst/clear                                                     |                4 |             32 |
+|  lab4_dp_inst/Audio_Codec/audiocodec_master_clock/inst/clk_out2 |                                                                                    |                                                                        |               14 |             36 |
+|  lab4_dp_inst/Audio_Codec/audiocodec_master_clock/inst/clk_out2 | lab4_dp_inst/Audio_Codec/initialize_audio/initWord[30]_i_1_n_0                     |                                                                        |                5 |             36 |
+|  clk_IBUF_BUFG                                                  | lab4_dp_inst/Audio_Codec/audio_inout/Data_Out_int[31]_i_1_n_0                      |                                                                        |                6 |             38 |
+|  clk_IBUF_BUFG                                                  | lab4_dp_inst/E[0]                                                                  | lab4_dp_inst/Audio_Codec/initialize_audio/SR[0]                        |                7 |             42 |
+|  lab4_dp_inst/Audio_Codec/audiocodec_master_clock/inst/clk_out2 |                                                                                    | lab4_dp_inst/Audio_Codec/initialize_audio/delaycnt0                    |                9 |             64 |
+|  clk_IBUF_BUFG                                                  |                                                                                    | lab4_dp_inst/Audio_Codec/initialize_audio/SR[0]                        |                9 |             64 |
+|  clk_IBUF_BUFG                                                  |                                                                                    | lab4_dp_inst/var[0]_i_1_n_0                                            |                8 |             64 |
++-----------------------------------------------------------------+------------------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+----------------+
+
+

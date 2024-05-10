@@ -1,0 +1,1010 @@
+/******************************************************************************
+*
+* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* Use of the Software is limited solely to applications:
+* (a) running on a Xilinx device, or
+* (b) that interact with a Xilinx device through a bus or interconnect.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Except as contained in this notice, the name of the Xilinx shall not be used
+* in advertising or otherwise to promote the sale, use or other dealings in
+* this Software without prior written authorization from Xilinx.
+*
+******************************************************************************/
+
+/*
+ * helloworld.c: simple test application
+ *
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+
+#include "xparameters.h"
+#include <unistd.h>
+#include "xstatus.h"
+#include "platform.h"
+#include "xil_printf.h"				// Contains xil_printf
+#include <xuartlite_l.h>			// Contains XUartLite_RecvByte
+#include <xil_io.h>					// Contains Xil_Out8 and its variation
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+
+/*
+ * The following constants define the slave registers used for our Counter PCORE
+ */
+#define countBase		0x44a00000
+#define RegExData		countBase			// 16	LSBs of slv_reg0
+#define	RegExRow		countBase+4			// 4	LSBs of slv_reg1
+#define	RegExCol		countBase+8			// 5	LSBs of slv_reg2
+#define	RegExWen		countBase+0x0c		// 1	LSB  of slv_reg3
+#define RegRandom		countBase+0x10		// 7	LSBs of slv_reg4
+#define RegWinFlag		countBase+0x14		// 1 	LSB  of slv_reg5
+#define RegButtonPress	countBase+0x18		// 7 	LSBs of slv_reg5
+#define RegIRFlag		countBase+0x1C		// 1	LSB  of slv_reg6
+
+
+#define printf xil_printf			/* A smaller footprint printf */
+
+#define uartRegAddr		0x40600000		// read <= RX, write => TX
+
+// Define enums for card ranks
+typedef enum {
+    ACE 	= 0b00000101,
+    TWO 	= 0b00000110,
+    THREE 	= 0b00000111,
+    FOUR 	= 0b00001000,
+    FIVE 	= 0b00001001,
+    SIX 	= 0b00001010,
+    SEVEN 	= 0b00001011,
+    EIGHT 	= 0b00001100,
+    NINE 	= 0b00001101,
+    TEN 	= 0b00001110,
+    JACK 	= 0b00001111,
+    QUEEN 	= 0b00010000,
+    KING 	= 0b00010001
+} Rank;
+
+// Define enums for card suits
+typedef enum {
+	HEART	= 0b00000001,
+	DIAMOND = 0b00000010,
+	CLUB 	= 0b00000011,
+	SPADE 	= 0b00000100
+} Suit;
+
+// Define enums for other objects
+typedef enum {
+    ONE 			= 0b00010011,
+    BACK 			= 0b00010010,
+	GREENBOX		= 0b00011010,
+	TOPBORDER		= 0b00010111,
+	BOTTOMBORDER	= 0b00011000,
+	LOSEBOX			= 0b00011011,
+	WINBOX			= 0b00011001,
+	PLAYERBOX		= 0b00010101,
+	DEALERBOX		= 0b00010100
+} objects;
+
+// struct for each card
+typedef struct cardType
+{
+    Suit suit;
+    Rank rank;
+    struct cardType *nextCard;
+} Card;
+
+// struct for CardList
+typedef struct
+{
+    int count;
+    Card *topCard;
+    Card *bottomCard;
+    char ListName[15];
+    int total;
+    int bust;
+} CardList;
+
+// print green box
+void printGreen(int col, int row)
+{
+	Xil_Out8(RegExData, 0b0010010);
+	Xil_Out8(RegExCol, col);
+	Xil_Out8(RegExRow, row);
+	Xil_Out8(RegExWen, 0x1);
+	Xil_Out8(RegExWen, 0x0);
+}
+
+// startup screen function
+void printStartUp(){
+	printGreen(0,1);
+	printGreen(0,2);
+	printGreen(0,3);
+	printGreen(0,4);
+	printGreen(0,5);
+
+	printGreen(1,1);
+	printGreen(1,3);
+	printGreen(1,5);
+	printGreen(1,8);
+	printGreen(1,12);
+
+	printGreen(2,1);
+	printGreen(2,2);
+	printGreen(2,3);
+	printGreen(2,4);
+	printGreen(2,5);
+	printGreen(2,8);
+	printGreen(2,9);
+	printGreen(2,10);
+	printGreen(2,11);
+	printGreen(2,12);
+
+	printGreen(3,8);
+
+	printGreen(4,1);
+	printGreen(4,2);
+	printGreen(4,3);
+	printGreen(4,4);
+	printGreen(4,5);
+
+	printGreen(5,5);
+	printGreen(5,9);
+	printGreen(5,10);
+	printGreen(5,11);
+	printGreen(5,12);
+
+	printGreen(6,5);
+	printGreen(6,8);
+	printGreen(6,10);
+
+	printGreen(7,9);
+	printGreen(7,10);
+	printGreen(7,11);
+	printGreen(7,12);
+
+	printGreen(8,2);
+	printGreen(8,3);
+	printGreen(8,4);
+	printGreen(8,5);
+
+	printGreen(9,1);
+	printGreen(9,3);
+	printGreen(9,8);
+	printGreen(9,9);
+	printGreen(9,10);
+	printGreen(9,11);
+	printGreen(9,12);
+
+	printGreen(10,2);
+	printGreen(10,3);
+	printGreen(10,4);
+	printGreen(10,5);
+	printGreen(10,8);
+	printGreen(10,12);
+
+	printGreen(11,8);
+	printGreen(11,12);
+
+	printGreen(12,1);
+	printGreen(12,2);
+	printGreen(12,3);
+	printGreen(12,4);
+	printGreen(12,5);
+
+	printGreen(13,1);
+	printGreen(13,5);
+	printGreen(13,8);
+	printGreen(13,9);
+	printGreen(13,10);
+	printGreen(13,11);
+	printGreen(13,12);
+
+	printGreen(14,1);
+	printGreen(14,5);
+	printGreen(14,10);
+
+	printGreen(15,8);
+	printGreen(15,9);
+	printGreen(15,11);
+	printGreen(15,12);
+
+	printGreen(16,1);
+	printGreen(16,2);
+	printGreen(16,3);
+	printGreen(16,4);
+	printGreen(16,5);
+
+	printGreen(17,3);
+	printGreen(17,8);
+	printGreen(17,9);
+	printGreen(17,10);
+	printGreen(17,12);
+
+	printGreen(18,1);
+	printGreen(18,2);
+	printGreen(18,4);
+	printGreen(18,5);
+
+	printGreen(19,8);
+	printGreen(19,9);
+	printGreen(19,10);
+	printGreen(19,12);
+
+}
+
+void printPlayerTotal(CardList *cardList)
+{
+	int total = cardList->total; // create new card struct to topCard
+
+	int tensPlaceInt = total / 10;
+	int onesPlaceInt = total % 10;
+	Rank tensPlace;
+	Rank onesPlace;
+
+	switch(tensPlaceInt) {
+
+		case 1:
+			tensPlace = ONE;
+			break;
+		case 2:
+			tensPlace = TWO;
+			break;
+		case 3:
+			tensPlace = THREE;
+			break;
+		case 4:
+			tensPlace = FOUR;
+			break;
+		case 5:
+			tensPlace = FIVE;
+			break;
+		case 6:
+			tensPlace = SIX;
+			break;
+		case 7:
+			tensPlace = SEVEN;
+			break;
+		case 8:
+			tensPlace = EIGHT;
+			break;
+		case 9:
+			tensPlace = NINE;
+			break;
+		default:
+			tensPlace = 0b00000000;
+			break;
+	}
+
+	switch(onesPlaceInt) {
+
+		case 1:
+			onesPlace = ONE;
+			break;
+		case 2:
+			onesPlace = TWO;
+			break;
+		case 3:
+			onesPlace = THREE;
+			break;
+		case 4:
+			onesPlace = FOUR;
+			break;
+		case 5:
+			onesPlace = FIVE;
+			break;
+		case 6:
+			onesPlace = SIX;
+			break;
+		case 7:
+			onesPlace = SEVEN;
+			break;
+		case 8:
+			onesPlace = EIGHT;
+			break;
+		case 9:
+			onesPlace = NINE;
+			break;
+		default:
+			onesPlace = 0b00000000;
+			break;
+	}
+
+	Xil_Out8(RegExData, tensPlace);
+	Xil_Out8(RegExCol, 2);
+	Xil_Out8(RegExRow, 8);
+	Xil_Out8(RegExWen, 0x1);
+	Xil_Out8(RegExWen, 0x0);
+
+	Xil_Out8(RegExData, onesPlace);
+	Xil_Out8(RegExCol, 3);
+	Xil_Out8(RegExRow, 8);
+	Xil_Out8(RegExWen, 0x1);
+	Xil_Out8(RegExWen, 0x0);
+
+
+}
+
+void printDealerTotal(CardList *cardList)
+{
+	int total = cardList->total; // create new card struct to topCard
+
+	int tensPlaceInt = total / 10;
+	int onesPlaceInt = total % 10;
+	Rank tensPlace;
+	Rank onesPlace;
+
+	switch(tensPlaceInt) {
+
+		case 1:
+			tensPlace = ONE;
+			break;
+		case 2:
+			tensPlace = TWO;
+			break;
+		case 3:
+			tensPlace = THREE;
+			break;
+		case 4:
+			tensPlace = FOUR;
+			break;
+		case 5:
+			tensPlace = FIVE;
+			break;
+		case 6:
+			tensPlace = SIX;
+			break;
+		case 7:
+			tensPlace = SEVEN;
+			break;
+		case 8:
+			tensPlace = EIGHT;
+			break;
+		case 9:
+			tensPlace = NINE;
+			break;
+		default:
+			tensPlace = 0b00000000;
+			break;
+	}
+
+	switch(onesPlaceInt) {
+
+		case 1:
+			onesPlace = ONE;
+			break;
+		case 2:
+			onesPlace = TWO;
+			break;
+		case 3:
+			onesPlace = THREE;
+			break;
+		case 4:
+			onesPlace = FOUR;
+			break;
+		case 5:
+			onesPlace = FIVE;
+			break;
+		case 6:
+			onesPlace = SIX;
+			break;
+		case 7:
+			onesPlace = SEVEN;
+			break;
+		case 8:
+			onesPlace = EIGHT;
+			break;
+		case 9:
+			onesPlace = NINE;
+			break;
+		default:
+			onesPlace = 0b00000000;
+			break;
+	}
+
+	Xil_Out8(RegExData, tensPlace);
+	Xil_Out8(RegExCol, 2);
+	Xil_Out8(RegExRow, 3);
+	Xil_Out8(RegExWen, 0x1);
+	Xil_Out8(RegExWen, 0x0);
+
+	Xil_Out8(RegExData, onesPlace);
+	Xil_Out8(RegExCol, 3);
+	Xil_Out8(RegExRow, 3);
+	Xil_Out8(RegExWen, 0x1);
+	Xil_Out8(RegExWen, 0x0);
+
+
+}
+
+void printDealerCardList(CardList *cardList)
+{
+   Card *currentCard = cardList->topCard; // create new card struct to topCard
+   int Col = 1;
+   int Row = 5;
+   while (currentCard != NULL)            // Loop through the CardList until the end is reached
+   {
+
+		Rank rank = currentCard->rank;
+		Suit suit = currentCard->suit;
+
+		printObject(BACK, Col, Row);
+		Xil_Out8(RegExData, suit);
+		Xil_Out8(RegExCol, Col);
+		Xil_Out8(RegExRow, Row);
+		Xil_Out8(RegExWen, 0x1);
+		Xil_Out8(RegExWen, 0x0);
+
+		//print card
+		printObject(BACK, Col, Row+1);
+		Xil_Out8(RegExData, rank);
+		Xil_Out8(RegExCol, Col);
+		Xil_Out8(RegExRow, Row+1);
+		Xil_Out8(RegExWen, 0x1);
+		Xil_Out8(RegExWen, 0x0);
+
+		Col = Col +2;
+
+      currentCard = currentCard->nextCard; // Move to the next card in the CardList
+   }
+}
+
+void printPlayerCardList(CardList *cardList)
+{
+   Card *currentCard = cardList->topCard; // create new card struct to topCard
+   int Col = 1;
+   int Row = 10;
+   while (currentCard != NULL)            // Loop through the CardList until the end is reached
+   {
+
+		Rank rank = currentCard->rank;
+		Suit suit = currentCard->suit;
+
+		printObject(BACK, Col, Row);
+		Xil_Out8(RegExData, suit);
+		Xil_Out8(RegExCol, Col);
+		Xil_Out8(RegExRow, Row);
+		Xil_Out8(RegExWen, 0x1);
+		Xil_Out8(RegExWen, 0x0);
+
+		printObject(BACK, Col, Row+1);
+		Xil_Out8(RegExData, rank);
+		Xil_Out8(RegExCol, Col);
+		Xil_Out8(RegExRow, Row+1);
+		Xil_Out8(RegExWen, 0x1);
+		Xil_Out8(RegExWen, 0x0);
+
+		Col = Col +2;
+
+      currentCard = currentCard->nextCard; // Move to the next card in the CardList
+   }
+}
+
+Card *createCard(Rank cardRank, Suit cardSuit)
+{
+   Card *newCard = (Card *)malloc(sizeof(Card));
+   newCard->rank = cardRank;
+   newCard->suit = cardSuit;
+   newCard->nextCard = NULL;
+   return newCard;
+}
+
+CardList *createCardList()
+{
+   CardList *newList = (CardList *)malloc(sizeof(CardList));
+   newList->topCard = NULL;
+   newList->bottomCard = NULL;
+   newList->count = 0;
+   newList->total = 0;
+   newList->bust = 0;
+   return newList;
+}
+
+int isEmpty(CardList *cardList)
+{
+   return cardList->count == 0;
+}
+
+void appendCard(CardList *cardList, Card *card)
+{
+   card->nextCard = NULL;
+   if (cardList->topCard == NULL)
+   {
+      cardList->topCard = card;
+      cardList->bottomCard = card;
+      cardList->count = 1;
+   }
+   else
+   {
+      cardList->bottomCard->nextCard = card;
+      cardList->bottomCard = card;
+      cardList->count += 1;
+      if (cardList->topCard == NULL)
+      {
+         cardList->topCard = card;
+      }
+   }
+}
+
+void makeDeck(CardList *deck)
+{
+   Card *newCard = NULL;
+   Suit cardSuits[4] = {HEART, DIAMOND, SPADE, CLUB};
+   Rank cardRanks[13] = {ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING};
+
+   for (int suit = 0; suit < 4; suit++)
+   {
+      for (int rank = 0; rank < 13; rank++)
+      {
+         newCard = createCard(cardRanks[rank], cardSuits[suit]);
+         appendCard(deck, newCard);
+      }
+   }
+}
+
+Card *getTopCard(CardList *cardList)
+{
+   if (cardList->topCard == NULL)
+   {
+      return NULL;
+   }
+   Card *topCard = cardList->topCard;
+   cardList->topCard = topCard->nextCard;
+   cardList->count -= 1;
+   return topCard;
+}
+
+void shuffleCardList(CardList *cardList, int cutCount)
+{
+   CardList *list1 = createCardList();
+   CardList *list2 = createCardList();
+
+   for (int i = 0; i < 50; i++)
+   {
+
+      cutCount = cutCount % 10 + 21;
+      for (int i = 0; i < cutCount; i++)
+      {
+         appendCard(list1, getTopCard(cardList));
+      }
+      while (!isEmpty(cardList))
+      {
+         appendCard(list2, getTopCard(cardList));
+      }
+
+      while (!isEmpty(list1) || !isEmpty(list2))
+      {
+         if (rand() % 2)
+         {
+            if (!isEmpty(list1))
+            {
+               appendCard(cardList, getTopCard(list1));
+            }
+         }
+         else
+         {
+            if (!isEmpty(list2))
+            {
+               appendCard(cardList, getTopCard(list2));
+            }
+         }
+      }
+   }
+   freeCardList(list1);
+   freeCardList(list2);
+}
+
+
+
+void freeCardList(CardList *cardList)
+{
+   Card *nextCard = cardList->topCard;
+
+   while (nextCard != NULL)
+   {
+      cardList->topCard = nextCard->nextCard;
+      free(nextCard);
+      nextCard = cardList->topCard;
+   }
+   free(cardList);
+}
+
+
+void Count(CardList *player)
+{
+   Card *currentCard = player->topCard;
+
+   int total = 0;
+   int numAces = 0;
+   player->total = 0;
+
+   while (currentCard != NULL)
+   {
+      if (currentCard->rank == TEN || currentCard->rank == JACK || currentCard->rank == QUEEN || currentCard->rank == KING)
+      {
+    	  total += 10;
+      }
+      else if (currentCard->rank == ACE)
+      {
+    	  total += 1;
+    	  numAces++;
+      }
+      else if (currentCard->rank == TWO)
+      {
+    	  total += 2;
+      }
+      else if (currentCard->rank == THREE)
+      {
+    	  total += 3;
+      }
+      else if (currentCard->rank == FOUR)
+      {
+    	  total += 4;
+      }
+      else if (currentCard->rank == FIVE)
+      {
+    	  total += 5;
+      }
+      else if (currentCard->rank == SIX)
+      {
+    	  total += 6;
+      }
+      else if (currentCard->rank == SEVEN)
+      {
+    	  total += 7;
+      }
+      else if (currentCard->rank == EIGHT)
+      {
+    	  total += 8;
+      }
+      else
+      {
+    	  total += 9;
+      }
+
+
+      currentCard = currentCard->nextCard;
+   }
+
+   for (int i = 0; i < numAces; i++)
+   {
+      if (total + 10 <= 21)
+      {
+    	  total += 10;
+      }
+   }
+
+
+   player->total = total;
+
+   if (player->total > 21)
+   {
+	   player->bust = 1;
+   }
+   printf("%d\r\n",player->total);
+}
+
+void printObject(objects type, int col, int row){
+	Xil_Out8(RegExData, type);
+	Xil_Out8(RegExCol, col);
+	Xil_Out8(RegExRow, row);
+	Xil_Out8(RegExWen, 0x1);
+	Xil_Out8(RegExWen, 0x0);
+}
+
+int hitOrStand(CardList *deck, CardList *player){
+	Xil_Out8(RegIRFlag, 0x0);
+	usleep(50000);
+	Xil_Out8(RegIRFlag, 0x1);
+
+	while (Xil_In8(RegButtonPress) != 111 && Xil_In8(RegButtonPress) != 71) { // if source
+		printf("Hit with BUTTON 1 or Stand with BUTTON 2\r\n");
+	}
+
+	if (Xil_In8(RegButtonPress) == 111) { // HIT
+		CardList *playerTemp;
+		playerTemp = getTopCard(deck);
+		appendCard(player, playerTemp);
+		Count(player);
+		sleep(2);
+		printPlayerTotal(player);
+		printPlayerCardList(player);
+
+		Xil_Out8(RegIRFlag, 0x0);
+		usleep(50000);
+		Xil_Out8(RegIRFlag, 0x1);
+
+		while (Xil_In8(RegButtonPress) != 213) { // if source
+			printf("RESET CONTROLLER with SOURCE BUTTON\r\n");
+		}
+
+
+		return 1;
+	}
+	else {
+		return 0;
+	}
+
+}
+
+int main()
+{
+	init_platform();
+
+
+//		_________________________________________________________
+//		|	Power button	|	77		|	START GAME			|
+//		|	One button		|	111		|	HIT					|
+//		|	Two button		|	71		|	STAND				|
+//    	|	Source button	|	213		|	RESET CONTROLLER	|
+//    	|___________________|___________|_______________________|
+
+	// green background and start up screen
+	for (int row = 0; row < 15; row++) {
+		for (int col = 0; col < 21; col++) {
+			Xil_Out8(RegExData, GREENBOX);
+			Xil_Out8(RegExCol, col);
+			Xil_Out8(RegExRow, row);
+			Xil_Out8(RegExWen, 0x1);
+			Xil_Out8(RegExWen, 0x0);
+		}
+	}
+	printStartUp();
+
+	// wait for user input to start game
+	Xil_Out8(RegIRFlag, 0x0);
+	usleep(50000);
+	Xil_Out8(RegIRFlag, 0x1);
+
+	while (Xil_In8(RegButtonPress) != 77) {
+		printf("Press POWER to start game\r\n");
+
+	}
+
+	printf("Random number used for this game is %d\r\n",Xil_In8(RegRandom));
+	sleep(3);
+
+	// clear screen to default screen
+	for (int row = 0; row < 15; row++) {
+    	for (int col = 0; col < 21; col++) {
+    		Xil_Out8(RegExData, GREENBOX);
+    		Xil_Out8(RegExCol, col);
+    		Xil_Out8(RegExRow, row);
+    		Xil_Out8(RegExWen, 0x1);
+    		Xil_Out8(RegExWen, 0x0);
+    	}
+    }
+
+	// print dealer card boxes
+	printObject(DEALERBOX, 1,3);
+	printObject(TOPBORDER, 1,5);
+	printObject(BOTTOMBORDER, 1,6);
+	printObject(TOPBORDER, 3,5);
+	printObject(BOTTOMBORDER, 3,6);
+	printObject(TOPBORDER, 5,5);
+	printObject(BOTTOMBORDER, 5,6);
+	printObject(TOPBORDER, 7,5);
+	printObject(BOTTOMBORDER,7,6);
+	printObject(TOPBORDER, 9,5);
+	printObject(BOTTOMBORDER, 9,6);
+	printObject(TOPBORDER, 11,5);
+	printObject(BOTTOMBORDER, 11,6);
+	printObject(TOPBORDER, 13,5);
+	printObject(BOTTOMBORDER, 13,6);
+	printObject(TOPBORDER, 15,5);
+	printObject(BOTTOMBORDER, 15,6);
+	printObject(TOPBORDER, 17,5);
+	printObject(BOTTOMBORDER, 17,6);
+
+	// print player card boxes
+	printObject(PLAYERBOX, 1,8);
+	printObject(TOPBORDER, 1,10);
+	printObject(BOTTOMBORDER, 1,11);
+	printObject(TOPBORDER, 3,10);
+	printObject(BOTTOMBORDER, 3,11);
+	printObject(TOPBORDER, 5,10);
+	printObject(BOTTOMBORDER, 5,11);
+	printObject(TOPBORDER, 7,10);
+	printObject(BOTTOMBORDER,7,11);
+	printObject(TOPBORDER, 9,10);
+	printObject(BOTTOMBORDER, 9,11);
+	printObject(TOPBORDER, 11,10);
+	printObject(BOTTOMBORDER, 11,11);
+	printObject(TOPBORDER, 13,10);
+	printObject(BOTTOMBORDER, 13,11);
+	printObject(TOPBORDER, 15,10);
+	printObject(BOTTOMBORDER, 15,11);
+	printObject(TOPBORDER, 17,10);
+	printObject(BOTTOMBORDER, 17,11);
+
+	// print back of dealt cards to dealer
+	printObject(BACK,1,5);
+	printObject(BACK,1,6);
+	printObject(BACK,3,5);
+	printObject(BACK,3,6);
+
+	// print back of dealt cards to player
+	printObject(BACK,1,10);
+	printObject(BACK,1,11);
+	printObject(BACK,3,10);
+	printObject(BACK,3,11);
+
+	// create CardLists for player and dealer
+	CardList* player = createCardList();
+	CardList* dealer = createCardList();
+
+	// get random number from register
+	int random = Xil_In32(RegRandom);
+
+	// make deck, and shuffle
+	CardList *deck = createCardList();
+	makeDeck(deck);
+	shuffleCardList(deck, random);
+
+	// deal two cards for dealer, only showing one card
+	Card *temp1 = getTopCard(deck);
+	appendCard(dealer, temp1);
+	Count(dealer);
+	printPlayerTotal(player);
+	printDealerTotal(dealer);
+	sleep(1);
+	printDealerCardList(dealer);
+
+	Card *temp2 = getTopCard(deck);
+	appendCard(dealer, temp2);
+	Count(dealer);
+	// print back of card for one card, only show score of that card
+	sleep(1);
+	Xil_Out8(RegExData, 0b0010010);
+	Xil_Out8(RegExCol, 3);
+	Xil_Out8(RegExRow, 5);
+	Xil_Out8(RegExWen, 0x1);
+	Xil_Out8(RegExWen, 0x0);
+	sleep(1);
+	Xil_Out8(RegExData, 0b0010010);
+	Xil_Out8(RegExCol, 3);
+	Xil_Out8(RegExRow, 6);
+	Xil_Out8(RegExWen, 0x1);
+	Xil_Out8(RegExWen, 0x0);
+
+	// deal two cards for player
+	for (int i = 0; i < 2; i++)
+	 {
+		Card *playerTemp = getTopCard(deck);
+		appendCard(player, playerTemp);
+		Count(player);
+		sleep(1);
+		printPlayerTotal(player);
+		sleep(1);
+		printPlayerCardList(player);
+	 }
+
+	// declare an integer to keep track of hit or stand
+	int hitORstand = 1;
+
+	// loop through as long as player does not bust and wants to hit
+	while(hitORstand == 1 && player->bust == 0){
+
+		hitORstand = hitOrStand(deck, player);
+
+	}
+
+	// print dealer total, and the dealer's other card
+	sleep(1);
+	printDealerTotal(dealer);
+	printDealerCardList(dealer);
+
+
+	// deal cards to dealer untill condition is met
+    while(1) {
+
+    	printDealerCardList(dealer);
+    	sleep(2);
+
+    	if (dealer->total == 21) {
+    		break;
+    	}
+    	else if (dealer->total >= 18) {
+    		break;
+    	}
+    	else {
+			Card *dealerTemp;
+			dealerTemp = getTopCard(deck);
+			appendCard(dealer, dealerTemp);
+			Count(dealer);
+			printPlayerTotal(player);
+			printDealerTotal(dealer);
+			printDealerCardList(dealer);
+        }
+    }
+
+	sleep(3);
+
+	// clear sound flag
+    Xil_Out8(RegWinFlag, 0x0);
+
+    if (((player->total > dealer->total) && (player->total < 22)) || dealer->total > 21) {
+
+    	// print win screen
+		for (int row = 0; row < 15; row++) {
+	    	for (int col = 0; col < 21; col++) {
+	    		Xil_Out8(RegExData, WINBOX);
+	    		Xil_Out8(RegExCol, col);
+	    		Xil_Out8(RegExRow, row);
+	    		Xil_Out8(RegExWen, 0x1);
+	    		Xil_Out8(RegExWen, 0x0);
+	    		usleep(25000);
+	    	}
+
+	    }
+
+		// set sound flag
+    	Xil_Out8(RegWinFlag, 0x1);
+
+    	// play song for 5 seconds
+    	sleep(5);
+
+    	// clear sound flag
+    	Xil_Out8(RegWinFlag, 0x0);
+    }
+    else {
+
+    	// print lose screen
+		for (int row = 0; row < 15; row++) {
+	    	for (int col = 0; col < 21; col++) {
+	    		Xil_Out8(RegExData, LOSEBOX);
+	    		Xil_Out8(RegExCol, col);
+	    		Xil_Out8(RegExRow, row);
+	    		Xil_Out8(RegExWen, 0x1);
+	    		Xil_Out8(RegExWen, 0x0);
+	    		usleep(25000);
+	    	}
+		}
+
+    }
+
+	// green background and start up screen
+	for (int row = 0; row < 15; row++) {
+		for (int col = 0; col < 21; col++) {
+			Xil_Out8(RegExData, GREENBOX);
+			Xil_Out8(RegExCol, col);
+			Xil_Out8(RegExRow, row);
+			Xil_Out8(RegExWen, 0x1);
+			Xil_Out8(RegExWen, 0x0);
+		}
+	}
+	printStartUp();
+
+
+	printf("GAME OVER\r\n");
+
+	cleanup_platform();
+	return 0;
+}

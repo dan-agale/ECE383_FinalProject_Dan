@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ir_test_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ir_test_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="100010000000001fs"></ZoomEndTime>
+      <Cursor1Time time="44240000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="134"></NameColumnWidth>
+      <ValueColumnWidth column_width="119"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/ir_test_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ir_test_tb/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ir_test_tb/buttonScan" type="array">
+      <obj_property name="ElementShortName">buttonScan[7:0]</obj_property>
+      <obj_property name="ObjectShortName">buttonScan[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ir_test_tb/clock_period" type="other">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ir_test_tb/data" type="logic">
+      <obj_property name="ElementShortName">data</obj_property>
+      <obj_property name="ObjectShortName">data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ir_test_tb/uut/ir_fsm_inst/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ir_test_tb/uut/ir_dp_inst/i_sig" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">i_sig[18:0]</obj_property>
+      <obj_property name="ObjectShortName">i_sig[18:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ir_test_tb/uut/ir_dp_inst/shiftReg" type="array">
+      <obj_property name="ElementShortName">shiftReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">shiftReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ir_test_tb/uut/ir_dp_inst/sw" type="array">
+      <obj_property name="ElementShortName">sw[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ir_test_tb/uut/ir_dp_inst/cw" type="array">
+      <obj_property name="ElementShortName">cw[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cw[3:0]</obj_property>
+   </wvobject>
+</wave_config>

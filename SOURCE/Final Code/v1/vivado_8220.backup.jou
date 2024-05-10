@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun May  5 16:00:38 2024
+# Process ID: 8220
+# Current directory: C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9668 C:\Dan_Agalakotuwa\ECE383_Dan\Final_Project\Code\v1\final_project_v1.xpr
+# Log file: C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/vivado.log
+# Journal file: C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name my_graphics_ip_v1_0_project -directory C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.tmp/my_graphics_ip_v1_0_project c:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src {C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.srcs/sources_1/new/ir_top_level.vhd C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.srcs/sources_1/new/ir_fsm.vhd C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.srcs/sources_1/new/ir_dp.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 12 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects  [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+upgrade_ip -vlnv xilinx.com:user:my_graphics_ip:1.0 [get_ips  design_1_my_graphics_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_my_graphics_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.ip_user_files/sim_scripts -ip_user_files_dir C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.ip_user_files -ipstatic_source_dir C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/modelsim} {questa=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/questa} {riviera=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/riviera} {activehdl=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+startgroup
+make_bd_pins_external  [get_bd_pins my_graphics_ip_0/JA_Port]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins my_graphics_ip_0/ac_adc_sdata]
+endgroup
+save_bd_design
+validate_bd_design
+make_wrapper -files [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name my_graphics_ip_v1_0_project -directory C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.tmp/my_graphics_ip_v1_0_project c:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 13 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:my_graphics_ip:1.0 [get_ips  design_1_my_graphics_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_my_graphics_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.ip_user_files/sim_scripts -ip_user_files_dir C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.ip_user_files -ipstatic_source_dir C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/modelsim} {questa=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/questa} {riviera=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/riviera} {activehdl=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects  [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+make_wrapper -files [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.runs/impl_1/design_1_wrapper.sysdef C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk -hwspec C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk/design_1_wrapper.hdf
+file mkdir C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk
+file copy -force C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.runs/impl_1/design_1_wrapper.sysdef C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk -hwspec C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk/design_1_wrapper.hdf
+file copy -force C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.runs/impl_1/design_1_wrapper.sysdef C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk -hwspec C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk/design_1_wrapper.hdf
+file mkdir C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk
+file copy -force C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.runs/impl_1/design_1_wrapper.sysdef C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk -hwspec C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name my_graphics_ip_v1_0_project -directory C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.tmp/my_graphics_ip_v1_0_project c:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 14 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:my_graphics_ip:1.0 [get_ips  design_1_my_graphics_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_my_graphics_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.ip_user_files/sim_scripts -ip_user_files_dir C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.ip_user_files -ipstatic_source_dir C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/modelsim} {questa=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/questa} {riviera=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/riviera} {activehdl=C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects  [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+make_wrapper -files [get_files C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.runs/impl_1/design_1_wrapper.sysdef C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk -hwspec C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.sdk/design_1_wrapper.hdf

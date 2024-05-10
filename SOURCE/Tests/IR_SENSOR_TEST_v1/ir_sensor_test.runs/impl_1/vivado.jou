@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May  7 16:05:10 2024
+# Process ID: 25296
+# Current directory: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.runs/impl_1
+# Command line: vivado.exe -log ir_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ir_test.tcl -notrace
+# Log file: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.runs/impl_1/ir_test.vdi
+# Journal file: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/IR_SENSOR_TEST_v1/ir_sensor_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ir_test.tcl -notrace

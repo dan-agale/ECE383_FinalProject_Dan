@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1714538294">
+  <File Type="PA-TCL" Name="mouse_top_level.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="mouse_top_level_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="mouse_top_level_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mouse_top_level.vds"/>
+  <File Type="RDS-UTIL" Name="mouse_top_level_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mouse_top_level_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mouse_top_level.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mouse_top_level_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mouse_top_level_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/PS2_Mouse_HowTo/debounce.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Hints/PS2_Mouse_HowTo/debounce.vhd"/>
+        <Attr Name="ImportTime" Val="1714447046"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PS2_Mouse_HowTo/ps2_mouse.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Hints/PS2_Mouse_HowTo/ps2_mouse.vhd"/>
+        <Attr Name="ImportTime" Val="1714447047"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PS2_Mouse_HowTo/ps2_transceiver.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Hints/PS2_Mouse_HowTo/ps2_transceiver.vhd"/>
+        <Attr Name="ImportTime" Val="1714447047"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mouse_top_level.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mouse_top_level"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/grid memory/Lab2.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../FSM_TEST/test_graphics/test_graphics.srcs/constrs_1/imports/grid memory/Lab2.xdc"/>
+        <Attr Name="ImportTime" Val="1714420372"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

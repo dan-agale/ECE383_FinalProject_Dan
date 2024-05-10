@@ -1,0 +1,553 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 12 16:32:24 2024
+# Process ID: 11316
+# Current directory: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13896 C:\Users\kaush\Documents\ECE383_Dan\Lab4\Code\Lab4\Lab4.xpr
+# Log file: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/vivado.log
+# Journal file: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 818.227 ; gain = 98.301
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 842.066 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689238B
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1515.570 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4_Gatecheck2/Lab4_Gatecheck2.srcs/sim_1/imports/Downloads/example_interpolate2_tb.vhdl
+update_compile_order -fileset sim_1
+set_property top interpolation_tb [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolation_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj interpolation_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/audio_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module audio_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj interpolation_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_wiz_1_clk_wiz_1_clk_wiz
+INFO: [VRFC 10-307] analyzing entity clk_wiz_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-307] analyzing entity clk_wiz_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/Audio_Codec_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Audio_Codec_Wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/Scopeface.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ScopeFace
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/TWICtl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TWICtl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/counter_hori.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_hori
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/counter_vert.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_vert
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/dvid.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dvid
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/i2s_ctl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity i2s_ctl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/lab2_datapath.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_datapath
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/lab2_fsm.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/new/lab4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab4/Code/Lab4_Gatecheck2/Lab4_Gatecheck2.srcs/sources_1/new/lab4_gc2_datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab4_datapath
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab4/Code/Lab4_Gatecheck2/Lab4_Gatecheck2.srcs/sources_1/new/lab4_gc2_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab4_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/tdms.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TDMS_encoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/vga_Dan.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity vga
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/video.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity video
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sim_1/imports/Downloads/example_interpolate2_tb.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity interpolation_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e217173f88974ba38e81cfd36c576833 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot interpolation_tb_behav xil_defaultlib.interpolation_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-665] expression has 0 elements ; formal switch expects 4 [C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/new/lab4.vhd:130]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1565.410 ; gain = 7.547
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolation_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj interpolation_tb_vlog.prj"
+"xvhdl --incr --relax -prj interpolation_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sim_1/imports/Downloads/example_interpolate2_tb.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity interpolation_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e217173f88974ba38e81cfd36c576833 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot interpolation_tb_behav xil_defaultlib.interpolation_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-665] expression has 0 elements ; formal switch expects 4 [C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/new/lab4.vhd:130]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 17:36:10 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 17:36:10 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 17:37:33 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 17:37:33 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 17:46:36 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 17:46:36 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689238B
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1591.230 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 17:56:16 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 17:56:16 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1591.230 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 18:05:41 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 18:05:41 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689238B
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1596.582 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+close [ open C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/new/unsign2sign.vhd w ]
+add_files C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.srcs/sources_1/new/unsign2sign.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 18:54:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 18:54:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689238B
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1603.707 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 19:06:50 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 19:06:50 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689238B
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1607.195 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 19:34:57 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 19:34:58 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1610.203 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 20:17:49 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 20:17:49 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 20:18:50 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 20:18:50 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 20:33:39 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 20:33:39 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689238B
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1626.453 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1626.453 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 20:58:48 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 20:58:48 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 21:00:56 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 21:00:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 21:06:00 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 21:06:00 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1626.453 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Apr 12 21:15:03 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/synth_1/runme.log
+[Fri Apr 12 21:15:03 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Lab4/Code/Lab4/Lab4.runs/impl_1/lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1626.582 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 12 21:23:15 2024...

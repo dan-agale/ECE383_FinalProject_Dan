@@ -1,0 +1,17 @@
+set_property SRC_FILE_INFO {cfile:{C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/PS2_MOUSE_TEST_v1/ps2_mouse_test.srcs/constrs_1/imports/grid memory/Lab2.xdc} rfile:{../../../ps2_mouse_test.srcs/constrs_1/imports/grid memory/Lab2.xdc} id:1} [current_design]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN R4    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L13P_T2_MRCC_34 Sch=sysclk
+set_property src_info {type:XDC file:1 line:38 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN G4  IOSTANDARD LVCMOS12 } [get_ports { reset_n }]; #IO_L12N_T1_MRCC_35 Sch=cpu_resetn
+set_property src_info {type:XDC file:1 line:109 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN AB22  IOSTANDARD LVCMOS33 } [get_ports { ps2_clk }]; #IO_L10N_T1_D15_14 Sch=ja[1]
+set_property src_info {type:XDC file:1 line:110 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN AB21  IOSTANDARD LVCMOS33 } [get_ports { ps2_data }]; #IO_L10P_T1_D14_14 Sch=ja[2]
+set_property src_info {type:XDC file:1 line:111 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN AB20  IOSTANDARD LVCMOS33 } [get_ports { mouse_data_new }]; #IO_L15N_T2_DQS_DOUT_CSO_B_14 Sch=ja[3]
+set_property src_info {type:XDC file:1 line:112 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN AB18  IOSTANDARD LVCMOS33 } [get_ports { middle }]; #IO_L17N_T2_A13_D29_14 Sch=ja[4]
+set_property src_info {type:XDC file:1 line:113 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN Y21   IOSTANDARD LVCMOS33 } [get_ports { right }]; #IO_L9P_T1_DQS_14 Sch=ja[7]
+set_property src_info {type:XDC file:1 line:114 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN AA21  IOSTANDARD LVCMOS33 } [get_ports { left }]; #IO_L8N_T1_D12_14 Sch=ja[8]

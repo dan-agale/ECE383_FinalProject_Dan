@@ -1,0 +1,181 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May  7 15:46:45 2024
+# Process ID: 12124
+# Current directory: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15872 C:\Users\kaush\Documents\ECE383_Dan\Final_Project\Tests\GRAPHICS_FSM_TEST\test_graphics\test_graphics.xpr
+# Log file: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/vivado.log
+# Journal file: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics'
+INFO: [Project 1-313] Project file moved from 'C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:nexys_video:part0:1.2' used to customize the IP 'clk_wiz_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 914.789 ; gain = 170.648
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'graphics' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj graphics_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj graphics_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-307] analyzing entity clk_wiz_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.srcs/sources_1/imports/grid memory/dvid.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dvid
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.srcs/sources_1/imports/grid memory/graphics_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.srcs/sources_1/imports/grid memory/graphics_datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity graphics_datapath
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.srcs/sources_1/imports/grid memory/graphics_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity graphics_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.srcs/sources_1/imports/grid memory/scopeFace.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity scopeFace
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.srcs/sources_1/imports/grid memory/tdms.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TDMS_encoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.srcs/sources_1/imports/grid memory/vga.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity vga
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.srcs/sources_1/imports/grid memory/video.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity video
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.srcs/sources_1/imports/grid memory/graphics.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity graphics
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 109de4d34eda4084a934e60ccbd9d913 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot graphics_behav xil_defaultlib.graphics xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unimacro.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package xil_defaultlib.graphicsparts
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.glbl
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(init_00="1000101111000...]
+Compiling architecture bram_v of entity unimacro.BRAM_SDP_MACRO [\BRAM_SDP_MACRO(device="7SERIES"...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=10.0...]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.clk_wiz_0_clk_wiz_0_clk_wiz [clk_wiz_0_clk_wiz_0_clk_wiz_defa...]
+Compiling architecture structure of entity xil_defaultlib.clk_wiz_0 [clk_wiz_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.scopeFace [scopeface_default]
+Compiling architecture behavioral of entity xil_defaultlib.vga [vga_default]
+Compiling architecture behavioral of entity xil_defaultlib.TDMS_encoder [tdms_encoder_default]
+Compiling architecture oddr_v of entity unisim.ODDR [\ODDR(ddr_clk_edge="SAME_EDGE",s...]
+Compiling architecture oddr2_v of entity unisim.ODDR2 [\ODDR2(ddr_alignment="C0",srtype...]
+Compiling architecture behavioral of entity xil_defaultlib.dvid [dvid_default]
+Compiling architecture obufds_v of entity unisim.OBUFDS [\OBUFDS(1,9)(1,7)(1,4)\]
+Compiling architecture structure of entity xil_defaultlib.video [video_default]
+Compiling architecture behavioral of entity xil_defaultlib.graphics_datapath [graphics_datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.graphics_fsm [graphics_fsm_default]
+Compiling architecture behavior of entity xil_defaultlib.graphics
+Built simulation snapshot graphics_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.sim/sim_1/behav/xsim/xsim.dir/graphics_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May  7 16:03:34 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 960.711 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "graphics_behav -key {Behavioral:sim_1:Functional:graphics} -tclbatch {graphics.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source graphics.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'graphics_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 977.594 ; gain = 16.883
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Tue May  7 16:03:43 2024] Launched synth_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.runs/synth_1/runme.log
+[Tue May  7 16:03:43 2024] Launched impl_1...
+Run output will be captured here: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689238B
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.runs/impl_1/graphics.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/GRAPHICS_FSM_TEST/test_graphics/test_graphics.runs/impl_1/graphics.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1655.223 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  7 16:13:22 2024...

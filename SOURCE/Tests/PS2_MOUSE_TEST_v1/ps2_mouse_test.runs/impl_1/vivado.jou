@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr 30 22:39:27 2024
+# Process ID: 23828
+# Current directory: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/PS2_MOUSE_TEST_v1/ps2_mouse_test.runs/impl_1
+# Command line: vivado.exe -log mouse_top_level.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mouse_top_level.tcl -notrace
+# Log file: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/PS2_MOUSE_TEST_v1/ps2_mouse_test.runs/impl_1/mouse_top_level.vdi
+# Journal file: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/PS2_MOUSE_TEST_v1/ps2_mouse_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source mouse_top_level.tcl -notrace

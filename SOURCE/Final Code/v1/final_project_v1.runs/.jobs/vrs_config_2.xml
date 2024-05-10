@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_my_graphics_ip_0_0_synth_1" LaunchDir="C:/Dan_Agalakotuwa/ECE383_Dan/Final_Project/Code/v1/final_project_v1.runs/design_1_my_graphics_ip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

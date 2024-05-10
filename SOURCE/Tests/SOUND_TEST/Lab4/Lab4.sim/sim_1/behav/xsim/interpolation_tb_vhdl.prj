@@ -1,0 +1,23 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab4.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_sim_netlist.vhdl" \
+"../../../../Lab4.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/Audio_Codec_Wrapper.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/Scopeface.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/TWICtl.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/counter_hori.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/counter_vert.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/dvid.vhdl" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/i2s_ctl.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/lab2_datapath.vhdl" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/lab2_fsm.vhdl" \
+"../../../../Lab4.srcs/sources_1/new/lab4.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab4/Code/Lab4_Gatecheck2/Lab4_Gatecheck2.srcs/sources_1/new/lab4_gc2_datapath.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab4/Code/Lab4_Gatecheck2/Lab4_Gatecheck2.srcs/sources_1/new/lab4_gc2_fsm.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/tdms.vhdl" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/vga_Dan.vhd" \
+"../../../../Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab1_files/video.vhdl" \
+"../../../../Lab4.srcs/sim_1/imports/Downloads/example_interpolate2_tb.vhdl" \
+
+# Do not sort compile order
+nosort

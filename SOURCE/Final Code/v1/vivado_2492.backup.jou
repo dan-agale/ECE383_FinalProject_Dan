@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May  2 08:33:37 2024
+# Process ID: 2492
+# Current directory: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11892 C:\Users\kaush\Documents\ECE383_Dan\Final_Project\Code\v1\final_project_v1.xpr
+# Log file: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/vivado.log
+# Journal file: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+open_bd_design {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name my_graphics_ip_v1_0_project -directory C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.tmp/my_graphics_ip_v1_0_project c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/RANDOM_NUMBER_TEST_v1/random.srcs/sources_1/new/randomNum.vhd C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/RANDOM_NUMBER_TEST_v1/random.srcs/sources_1/new/pseudo_random_test.vhd}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/pseudo_random_test.vhd] -no_script -reset -force -quiet
+remove_files  c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/pseudo_random_test.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project

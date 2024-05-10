@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1715119467">
+  <File Type="ROUTE-PWR" Name="ir_test_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="ir_test.tcl"/>
+  <File Type="BITSTR-BMM" Name="ir_test_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="ir_test_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ir_test_reports.tcl"/>
+  <File Type="OPT-DCP" Name="ir_test_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ir_test_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ir_test.hwdef"/>
+  <File Type="PWROPT-DCP" Name="ir_test_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="ir_test_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ir_test_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ir_test_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ir_test_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ir_test_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ir_test_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="ir_test.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ir_test_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="ir_test.bin"/>
+  <File Type="PHYSOPT-DCP" Name="ir_test_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="ir_test.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ir_test_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ir_test_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ir_test_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ir_test_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ir_test_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ir_test_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="ir_test.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ir_test_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="ir_test.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ir_test_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ir_test_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="ir_test.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="ir_test_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ir_test_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ir_test_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ir_test_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ir_test_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ir_test_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="ir_test_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ir_test_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ir_test_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ir_test_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ir_test_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ir_test_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="ir_test.bit"/>
+  <File Type="BITSTR-RBT" Name="ir_test.rbt"/>
+  <File Type="BITSTR-NKY" Name="ir_test.nky"/>
+  <File Type="BG-DRC" Name="ir_test.drc"/>
+  <File Type="RDI-RDI" Name="ir_test.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ir_dp.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ir_fsm.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ir_top_level.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ir_test"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/grid memory/Lab2.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Code/v1/final_project_v1.srcs/constrs_1/imports/grid memory/Lab2.xdc"/>
+        <Attr Name="ImportTime" Val="1714459059"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

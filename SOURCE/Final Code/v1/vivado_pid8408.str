@@ -1,0 +1,1702 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 8408
+License: Customer
+
+Current time: 	Fri May 03 00:30:04 MDT 2024
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 3
+Available disk space: 72 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	kaush
+User home directory: C:/Users/kaush
+User working directory: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/kaush/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/kaush/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/kaush/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/vivado.log
+Vivado journal file location: 	C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/vivado.jou
+Engine tmp dir: 	C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/.Xil/Vivado-8408-Dans_Surface
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	196 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 512 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\kaush\Documents\ECE383_Dan\Final_Project\Code\v1\final_project_v1.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 68 MB (+69175kb) [00:00:11]
+// [Engine Memory]: 500 MB (+372984kb) [00:00:11]
+// Tcl Message: open_project C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 534 MB. GUI used memory: 37 MB. Current time: 5/3/24 12:30:06 AM MDT
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 541 MB (+16939kb) [00:00:16]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 591 MB (+23786kb) [00:00:21]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 630 MB (+9831kb) [00:00:30]
+// [GUI Memory]: 85 MB (+13873kb) [00:00:30]
+// [Engine Memory]: 674 MB (+12544kb) [00:00:31]
+// [GUI Memory]: 90 MB (+539kb) [00:00:32]
+// [GUI Memory]: 96 MB (+1503kb) [00:00:33]
+// Tcl Message: open_project C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 713 MB. GUI used memory: 54 MB. Current time: 5/3/24 12:30:25 AM MDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 903.949 ; gain = 173.336 
+// Project name: final_project_v1; location: C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1; part: xc7a200tsbg484-1
+// [Engine Memory]: 717 MB (+10489kb) [00:00:34]
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 1); // B (D, ck)
+// [GUI Memory]: 107 MB (+7052kb) [00:00:44]
+// PAPropertyPanels.initPanels (design_1.bd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 1, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0 Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1 Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:mig_7series:4.1 - mig_7series_0 Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_100M Adding cell -- xilinx.com:user:my_graphics_ip:1.0 - my_graphics_ip_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 756 MB (+3229kb) [00:00:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 762 MB. GUI used memory: 63 MB. Current time: 5/3/24 12:30:46 AM MDT
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10 Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10 Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram Successfully read diagram <design_1> from BD file <C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 814 MB (+21305kb) [00:01:00]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1004.742 ; gain = 95.613 
+// 'bA' command handler elapsed time: 9 seconds
+dismissDialog("Open Block Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_mig_7series_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_mig_7series_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// Elapsed time: 50 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 126, 221, 1251, 578, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (ck): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (ck):  Edit in IP Packager : addNotify
+selectButton("PAResourceEtoH.EditIPProjectNameChooser_PROJECT_FOLDER_ALREADY_EXISTS_OK_OK", "OK"); // JButton (A, H)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name my_graphics_ip_v1_0_project -directory C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.tmp/my_graphics_ip_v1_0_project c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/kaush/documents/ece383_dan/final_project/code/v1/final_project_v1.tmp/my_graphics_ip_v1_0_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 856 MB. GUI used memory: 69 MB. Current time: 5/3/24 12:31:56 AM MDT
+// [Engine Memory]: 859 MB (+4104kb) [00:02:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 123 MB (+10948kb) [00:02:09]
+// [GUI Memory]: 134 MB (+4811kb) [00:02:10]
+// [Engine Memory]: 910 MB (+8796kb) [00:02:10]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1047.688 ; gain = 34.414 
+// [GUI Memory]: 141 MB (+205kb) [00:02:10]
+// 'i' command handler elapsed time: 16 seconds
+dismissDialog("Edit in IP Packager"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 148 MB (+431kb) [00:02:51]
+// Elapsed time: 124 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), random_number_generator_inst : xil_defaultlib.randomNum]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), random_number_generator_inst : xil_defaultlib.randomNum]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), random_number_generator_inst : xil_defaultlib.randomNum]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), graphics_dp_inst : graphics_datapath(Behavioral) (graphics_datapath.vhd)]", 3); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), graphics_dp_inst : graphics_datapath(Behavioral) (graphics_datapath.vhd)]", 3); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), graphics_dp_inst : graphics_datapath(Behavioral) (graphics_datapath.vhd)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), graphics_dp_inst : graphics_datapath(Behavioral) (graphics_datapath.vhd)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), graphics_dp_inst : graphics_datapath(Behavioral) (graphics_datapath.vhd)]", 3); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2, true); // B (D, ck) - Node
+// [GUI Memory]: 156 MB (+547kb) [00:04:32]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 473, 143); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rand", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rand"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rand"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rand"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rand"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rand"); // l (aQ, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+// [GUI Memory]: 164 MB (+92kb) [00:04:52]
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// HMemoryUtils.trashcanNow. Engine heap size: 935 MB. GUI used memory: 95 MB. Current time: 5/3/24 12:34:51 AM MDT
+// [Engine Memory]: 963 MB (+7757kb) [00:05:02]
+// Elapsed time: 28 seconds
+setFileChooser("C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/RANDOM_NUMBER_TEST_v1/random.srcs/sources_1/new/randomNum.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 36 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: add_files -norecurse -copy_to c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/RANDOM_NUMBER_TEST_v1/random.srcs/sources_1/new/randomNum.vhd 
+// Tcl Message: ERROR: [Vivado 12-3630] The destination file 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/randomNum.vhd' already exists, please use -force if you want to overwrite! 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-3630] The destination file 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/randomNum.vhd' already exists, please use -force if you want to overwrite!  
+// a (ck): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+setFileChooser("C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/RANDOM_NUMBER_TEST_v1/random.srcs/sources_1/new/randomNum.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: add_files -norecurse -copy_to c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/RANDOM_NUMBER_TEST_v1/random.srcs/sources_1/new/randomNum.vhd 
+// Tcl Message: ERROR: [Vivado 12-3630] The destination file 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/randomNum.vhd' already exists, please use -force if you want to overwrite! 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-3630] The destination file 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/randomNum.vhd' already exists, please use -force if you want to overwrite!  
+// a (ck): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), random_number_generator_inst : xil_defaultlib.randomNum]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), random_number_generator_inst : xil_defaultlib.randomNum]", 4, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ad (aj, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 138, 416); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 433, 296); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 440, 224); // ce (w, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2); // B (D, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 48, 150); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 83, 377); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+setFileChooser("C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/RANDOM_NUMBER_TEST_v1/random.srcs/sources_1/new/randomNum.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 5 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: add_files -norecurse -copy_to c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/RANDOM_NUMBER_TEST_v1/random.srcs/sources_1/new/randomNum.vhd 
+// Tcl Message: ERROR: [Vivado 12-3630] The destination file 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/randomNum.vhd' already exists, please use -force if you want to overwrite! 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-3630] The destination file 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/randomNum.vhd' already exists, please use -force if you want to overwrite!  
+// a (ck): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "random_num_generator"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Error: 'Please specify a valid directory name. (Invalid Directory Name)'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_SPECIFY_VALID_DIRECTORY_NAME_OK", "OK"); // JButton (A, H)
+selectButton(PAResourceAtoD.CreateSrcFileDialog_SPECIFY_FILE_DIRECTORY, (String) null); // q (ak, F)
+// Elapsed time: 12 seconds
+dismissFolderChooser();
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+dismissDialog("Create Source File"); // F (c)
+// 'h' command handler elapsed time: 36 seconds
+dismissDialog("Add Sources"); // c (ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectButton(PAResourceAtoD.CreateSrcFileDialog_SPECIFY_FILE_DIRECTORY, (String) null); // q (ak, F)
+// Elapsed time: 47 seconds
+setFolderChooser("C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src");
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "random_number_generator"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 64 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/random_number_generator.vhd w ] 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/random_number_generator.vhd 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 210 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 158, 335); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 103, 387); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 154, 313); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 139, 213); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, random_number_generator(Behavioral) (random_number_generator.vhd)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, random_number_generator(Behavioral) (random_number_generator.vhd)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 32 seconds
+selectCodeEditor("random_number_generator.vhd", 790, 290); // ce (w, ck)
+typeControlKey((HResource) null, "random_number_generator.vhd", 'v'); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectCodeEditor("random_number_generator.vhd", 226, 294); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 37 seconds
+selectCodeEditor("random_number_generator.vhd", 224, 179); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 111, 76); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 211, 210); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 124, 454); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 71, 402); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 71, 402, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("random_number_generator.vhd", 231, 409); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("random_number_generator.vhd", 98, 306); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 94, 295); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 96, 296); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("random_number_generator.vhd", 255, 222); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 167, 146); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 269, 253); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 47 seconds
+selectCodeEditor("random_number_generator.vhd", 379, 197); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("random_number_generator.vhd", 188, 335); // ce (w, ck)
+typeControlKey((HResource) null, "random_number_generator.vhd", 'v'); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("random_number_generator.vhd", 243, 157); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 70, 42); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("random_number_generator.vhd", 91, 108); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 91, 108); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 831, 304); // ce (w, ck)
+typeControlKey((HResource) null, "random_number_generator.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 452, 276); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectCodeEditor("random_number_generator.vhd", 286, 413); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 56, 293); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 484, 178); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("random_number_generator.vhd", 224, 192); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("random_number_generator.vhd", 195, 168); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 216, 183); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 216, 183, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("random_number_generator.vhd", 294, 212); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 246, 248); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 122, 346); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 195, 214); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 132, 437); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 268, 406); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 123, 369); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 109, 248); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 87, 183); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 176, 273); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 264, 286); // ce (w, ck)
+selectCodeEditor("random_number_generator.vhd", 337, 262); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("random_number_generator.vhd", 58, 296); // ce (w, ck)
+typeControlKey((HResource) null, "random_number_generator.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "random_number_generator.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "random_number_generator.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 3); // k (j, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 411, 215); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random_number_generator.vhd", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 3); // k (j, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 163, 369); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 163, 369, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "random", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "random"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "random"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "random"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "random"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "random"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "random"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "random"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "random"); // l (aQ, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 583, 298); // ce (w, ck)
+// Elapsed time: 87 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 372, 184); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 400, 242); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 166, 131); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 352, 187); // ce (w, ck)
+// Elapsed time: 73 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 578, 265); // ce (w, ck)
+// Elapsed time: 483 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 413, 176); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 975 MB. GUI used memory: 97 MB. Current time: 5/3/24 1:04:52 AM MDT
+// Elapsed time: 341 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 383, 198); // ce (w, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), graphics_dp_inst : graphics_datapath(Behavioral) (graphics_datapath.vhd), video_inst : video(structure) (video.vhdl)]", 4); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), graphics_dp_inst : graphics_datapath(Behavioral) (graphics_datapath.vhd), video_inst : video(structure) (video.vhdl)]", 4); // B (D, ck)
+// Elapsed time: 1057 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), graphics_dp_inst : graphics_datapath(Behavioral) (graphics_datapath.vhd)]", 3); // B (D, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 25 seconds
+String[] filenames31467 = {"C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab4/Code/Lab4_Gatecheck2/Lab4_Gatecheck2.srcs/sources_1/new/lab4.vhd", "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab4/Code/Lab4_Gatecheck2/Lab4_Gatecheck2.srcs/sources_1/new/lab4_dp.vhd", "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab4/Code/Lab4_Gatecheck2/Lab4_Gatecheck2.srcs/sources_1/new/lab4_fsm.vhd"};
+setFileChooser(filenames31467);
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 33 seconds
+String[] filenames16706 = {"C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/new/lab4.vhd", "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/new/slot_machine_fsm.vhd"};
+setFileChooser(filenames16706);
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 74 seconds
+dismissFileChooser();
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 142 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: ERROR: [Vivado 12-3630] The destination file 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/lab4.vhd' already exists, please use -force if you want to overwrite! 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-3630] The destination file 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/lab4.vhd' already exists, please use -force if you want to overwrite!  
+// a (ck): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+// Elapsed time: 141 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectButton(PAResourceAtoD.CreateSrcFileDialog_SPECIFY_FILE_DIRECTORY, (String) null); // q (ak, F)
+// Elapsed time: 30 seconds
+setFolderChooser("C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src");
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "lab4_fsm"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Warning: ''lab4_fsm.vhd' already exists. Please enter another name. (Create Source File)'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // JButton (A, H)
+dismissDialog("Create Source File"); // F (c)
+// 'h' command handler elapsed time: 53 seconds
+dismissDialog("Add Sources"); // c (ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 520, 154); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ad (aj, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+String[] filenames29306 = {"C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/lab4.vhd", "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/lab4_dp.vhd", "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/lab4_fsm.vhd"};
+setFileChooser(filenames29306);
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_SOURCES_INTO, "Copy sources into IP Directory", false); // g (bm, c): FALSE
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+dismissFileChooser();
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 24 seconds
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/lab4.vhd C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/lab4_fsm.vhd C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/lab4_dp.vhd} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab4(behavior) (lab4.vhd)]", 5); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab4(behavior) (lab4.vhd), slot_machine_inst : xil_defaultlib.slot_machine_fsm]", 8, false); // B (D, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+setFileChooser("C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/slot_machine_fsm.vhd");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_SOURCES_INTO, "Copy sources into IP Directory", false); // g (bm, c): FALSE
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/slot_machine_fsm.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab4(behavior) (lab4.vhd)]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab4(behavior) (lab4.vhd)]", 5, true); // B (D, ck) - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab4(behavior) (lab4.vhd)]", 5, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab4.vhd", 71, 294); // ce (w, ck)
+typeControlKey((HResource) null, "lab4.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "lab4.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "lab4.vhd", 'c'); // ce (w, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 161, 230); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 88, 169); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 88, 170, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 94, 177); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 94, 177, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 25, 209); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 25, 209, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 62, 450); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 62, 450, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 6, 213); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 169, 434); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 78, 128); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 244, 327); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 19 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 287, 312); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab4.vhd", 4); // k (j, ck)
+selectCodeEditor("lab4.vhd", 355, 145); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 428, 156); // ce (w, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab4(behavior) (lab4.vhd)]", 3); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd)]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd)]", 4, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("lab4_dp.vhd", 300, 138); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 94, 193); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 116, 193); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 116, 193, false, false, false, false, true); // ce (w, ck) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "phase_inc_switch"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "phase_inc_switch"); // l (aQ, ck)
+selectCodeEditor("lab4_dp.vhd", 527, 126); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 526, 113); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 84, 127); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 84, 127, false, false, false, false, true); // ce (w, ck) - Double Click
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "amp_switch", true); // l (aQ, ck)
+selectCodeEditor("lab4_dp.vhd", 405, 298); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("lab4_dp.vhd", 160, 259); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab4_dp.vhd", 86, 97); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 86, 97, false, false, false, false, true); // ce (w, ck) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "amp_switch"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "amp_switch"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "amp_switch"); // l (aQ, ck)
+selectCodeEditor("lab4_dp.vhd", 92, 112); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 92, 112, false, false, false, false, true); // ce (w, ck) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "chirp_sw"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "chirp_sw"); // l (aQ, ck)
+selectCodeEditor("lab4_dp.vhd", 532, 108); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 80, 110); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 80, 110, false, false, false, false, true); // ce (w, ck) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "chirp_sw"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "chirp_sw"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "chirp_sw"); // l (aQ, ck)
+selectCodeEditor("lab4_dp.vhd", 121, 348); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 302, 76); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 302, 77, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 302, 77); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("lab4_dp.vhd", 454, 278); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 306, 340); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 88, 148); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 88, 148, false, false, false, false, true); // ce (w, ck) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "var"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "var"); // l (aQ, ck)
+selectCodeEditor("lab4_dp.vhd", 435, 448); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 236, 302); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 141, 328); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 141, 328, false, false, false, false, true); // ce (w, ck) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sim_live"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sim_live"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sim_live"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sim_live"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sim_live"); // l (aQ, ck)
+selectCodeEditor("lab4_dp.vhd", 273, 178); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 307, 220); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 271, 318); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 372, 332); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("lab4_dp.vhd", 296, 297); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("lab4_dp.vhd", 436, 453); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectCodeEditor("lab4_dp.vhd", 444, 218); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 536, 257); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab4_dp.vhd", 129, 160); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 96, 144); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 96, 144, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 98, 143); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 98, 143, false, false, false, false, true); // ce (w, ck) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "chirp_sw"); // l (aQ, ck)
+selectCodeEditor("lab4_dp.vhd", 398, 298); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 153, 303); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 107, 269); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("lab4_dp.vhd", 358, 147); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 549, 398); // ce (w, ck)
+typeControlKey((HResource) null, "lab4_dp.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "lab4_dp.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "lab4_dp.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "lab4_dp.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab4.vhd", 4); // k (j, ck)
+selectCodeEditor("lab4.vhd", 562, 395); // ce (w, ck)
+typeControlKey((HResource) null, "lab4.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 307, 376); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 975 MB. GUI used memory: 97 MB. Current time: 5/3/24 1:34:52 AM MDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab4_dp.vhd", 5); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab4.vhd", 4); // k (j, ck)
+selectCodeEditor("lab4.vhd", 381, 332); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 371, 347); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 305, 330); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 307, 359); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 285, 216); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("lab4.vhd", 291, 399); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 432, 298); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("lab4.vhd", 284, 366); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("lab4.vhd", 410, 294); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 292, 269); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 289, 276); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab4.vhd", 177, 310); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 285, 317); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab4_dp.vhd", 5); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab4_dp.vhd", 578, 185); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 209, 217); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 209, 217, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 600, 281); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("lab4_dp.vhd", 579, 314); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab4.vhd", 4); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectCodeEditor("lab4.vhd", 76, 448); // ce (w, ck)
+typeControlKey((HResource) null, "lab4.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "lab4.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "lab4.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "lab4.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 3); // k (j, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 221, 314); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 285, 310); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 67, 338); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 71, 141); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 367, 285); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 303, 297); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 84, 390); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 157, 299); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 42, 420); // ce (w, ck)
+// Elapsed time: 40 seconds
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 100, 297); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 42, 244); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 80, 396); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 76, 249); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 102, 261); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 141, 281); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 104, 297); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 140, 311); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 105, 331); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 258, 331); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 252, 345); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 268, 364); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 263, 380); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 235, 397); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 118, 400); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 237, 396); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 184, 130); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 180, 126); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 98, 244); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 231, 142); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 136, 265); // ce (w, ck)
+// Elapsed time: 21 seconds
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 141, 281); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 139, 282); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 151, 279); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 152, 279); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 145, 280); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 109, 295); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 85, 297); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 85, 297, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 123, 295); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 114, 311); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 114, 311, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 159, 312); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 83, 327); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 83, 327, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 114, 339); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 118, 355); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 69, 351); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 69, 351, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 157, 351); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 157, 351, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 66, 365); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 66, 365, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 103, 370); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 67, 382); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 67, 382, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 87, 386); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 93, 398); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 93, 398, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 114, 401); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 155, 230); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 143, 384); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 195, 383); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 309, 381); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 189, 382); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 264, 302); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 299, 180); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 357, 213); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 150, 227); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 289, 259); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 122, 277); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 357, 351); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 170, 363); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 301, 387); // ce (w, ck)
+// Elapsed time: 164 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab4.vhd", 4); // k (j, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), graphics_dp_inst : graphics_datapath(Behavioral) (graphics_datapath.vhd)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("lab4_dp.vhd", 67, 380); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 67, 380, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 77, 398); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 77, 398, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 77, 384); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 77, 384, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 77, 384); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 77, 384, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 77, 383); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 77, 383, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("lab4_dp.vhd", 76, 375); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 89, 364); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 158, 352); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 176, 230); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 176, 230, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 119, 232); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 119, 232, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 191, 234); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 191, 234, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 193, 245); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 193, 245, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 195, 234); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 195, 234, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 192, 244); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 192, 244, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 195, 227); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 195, 227, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 198, 240); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 198, 240, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 191, 234); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 191, 234, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 51, 457); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 51, 457, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_dp.vhd", 52, 435); // ce (w, ck)
+selectCodeEditor("lab4_dp.vhd", 52, 435, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab4.vhd", 4); // k (j, ck)
+selectCodeEditor("lab4.vhd", 108, 148); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 108, 148, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4.vhd", 108, 148); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 108, 148); // ce (w, ck)
+selectCodeEditor("lab4.vhd", 108, 148, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "my_graphics_ip_v1_0_S00_AXI.vhd", 3); // k (j, ck)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_fsm_inst : lab4_fsm(Behavioral) (lab4_fsm.vhd)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_fsm_inst : lab4_fsm(Behavioral) (lab4_fsm.vhd)]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("lab4_fsm.vhd", 98, 124); // ce (w, ck)
+selectCodeEditor("lab4_fsm.vhd", 98, 124, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_fsm.vhd", 201, 125); // ce (w, ck)
+selectCodeEditor("lab4_fsm.vhd", 201, 125, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_fsm.vhd", 229, 212); // ce (w, ck)
+selectCodeEditor("lab4_fsm.vhd", 229, 212, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_fsm.vhd", 205, 259); // ce (w, ck)
+selectCodeEditor("lab4_fsm.vhd", 205, 259, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("lab4_fsm.vhd", 220, 284); // ce (w, ck)
+selectCodeEditor("lab4_fsm.vhd", 216, 267); // ce (w, ck)
+// Elapsed time: 84 seconds
+selectCodeEditor("lab4_fsm.vhd", 462, 139); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "my_graphics_ip_v1_0.vhd", 5); // k (j, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 345, 404); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 172, 348); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 142, 366); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 116, 364); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 115, 364, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 139, 367); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 102, 384); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 136, 399); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 135, 402); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 140, 401); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 102, 415); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 109, 431); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 74, 446); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 75, 466); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 150, 364); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 99, 371); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 99, 371, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 103, 370); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 103, 370, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 203, 360); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 171, 364); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 85, 382); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 85, 382, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 125, 385); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 104, 400); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 104, 400, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 159, 405); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 83, 413); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 83, 413, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 119, 417); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 90, 434); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 90, 434, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 119, 430); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 60, 449); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 60, 449, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 108, 454); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 67, 467); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 67, 467, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 96, 466); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 336, 430); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 317, 310); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 129, 212); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 129, 212, false, false, false, false, true); // ce (w, ck) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tmds"); // l (aQ, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 272, 179); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("my_graphics_ip_v1_0.vhd", 368, 248); // ce (w, ck)
+typeControlKey((HResource) null, "my_graphics_ip_v1_0.vhd", 'v'); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 31 seconds
+setFileChooser("C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/audio_init.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 34 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -copy_to c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/audio_init.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_init (audio_init.v)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_init (audio_init.v)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_init (audio_init.v)]", 11, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_init (audio_init.v)]", 11, true); // B (D, ck) - Node
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/audio_init.v] -no_script -reset -force -quiet 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/audio_init.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+setFileChooser("C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/Audio_Codec_Wrapper.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -copy_to c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/Audio_Codec_Wrapper.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd), Audio_Codec : Audio_Codec_Wrapper(Behavioral) (Audio_Codec_Wrapper.vhd)]", 8); // B (D, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 19 seconds
+String[] filenames17995 = {"C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/TWICtl.vhd", "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/audio_init.v", "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/i2s_ctl.vhd"};
+setFileChooser(filenames17995);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 23 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: add_files -norecurse -copy_to c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/TWICtl.vhd C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/i2s_ctl.vhd C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Tests/SOUND_TEST/Lab4/Lab4.srcs/sources_1/imports/ECE383_Dan/Lab2/code/Lab2_files/audio_init.v} 
+// Tcl Message: ERROR: [Vivado 12-3630] The destination file 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/audio_init.v' already exists, please use -force if you want to overwrite! 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado 12-3630] The destination file 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/audio_init.v' already exists, please use -force if you want to overwrite!  
+// a (ck): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 25 seconds
+String[] filenames2600 = {"C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/TWICtl.vhd", "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/audio_init.v", "C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/i2s_ctl.vhd"};
+setFileChooser(filenames2600);
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_SOURCES_INTO, "Copy sources into IP Directory", false); // g (bm, c): FALSE
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 30 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/TWICtl.vhd C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/i2s_ctl.vhd C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/audio_init.v} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+// 'h' command handler elapsed time: 3 seconds
+dismissDialog("Add Sources"); // c (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // u (O, ck)
+// bx (ck):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+dismissDialog("Open Project Manager"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3, "Clocking Wizard", 0, true); // O (O, ck) - Node
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clocki"); // OverlayTextField (P, ck)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3); // O (O, ck)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 3, "Clocking Wizard", 0, true, false, false, false, false, true); // O (O, ck) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (ck):  Customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// r (ck): Customize IP: addNotify
+dismissDialog("Customize IP"); // l (ck)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cJ (C, r)
+selectCheckBox((HResource) null, "clk_out2", true); // g (bB, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", false); // g (bB, r): FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 11 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "12.288"); // z (cK)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", true); // g (bB, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "50"); // z (cK)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "Active Low"); // cE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // r (ck)
+// bx (ck):  Customize IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_1 -dir c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {12.288} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {81.375} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {201.426} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_ips clk_wiz_1] 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/clk_wiz_1/clk_wiz_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_1'... 
+// aI (ck): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+selectRadioButton(PAResourceQtoS.SimpleOutputProductDialog_SYNTHESIZE_DESIGN_GLOBALLY, "Global"); // a (Q, aI)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: set_property generate_synth_checkpoint false [get_files  c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/clk_wiz_1/clk_wiz_1.xci] 
+// Tcl Message: generate_target all [get_files  c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/clk_wiz_1/clk_wiz_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_1'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_1'... 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_1'... 
+// Tcl Message: INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_1'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0/src/clk_wiz_1/clk_wiz_1.xci] -no_script -sync -force -quiet 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 205ms to process. Increasing delay to 2000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 173 MB (+953kb) [01:26:51]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd), Audio_Codec : Audio_Codec_Wrapper(Behavioral) (Audio_Codec_Wrapper.vhd), audiocodec_master_clock : clk_wiz_1 (clk_wiz_1.xci)]", 10); // B (D, ck)
+// A (ck): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd), Audio_Codec : Audio_Codec_Wrapper(Behavioral) (Audio_Codec_Wrapper.vhd), audiocodec_master_clock : clk_wiz_1 (clk_wiz_1.xci), clk_wiz_1 (clk_wiz_1.v)]", 11); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd), Audio_Codec : Audio_Codec_Wrapper(Behavioral) (Audio_Codec_Wrapper.vhd), audiocodec_master_clock : clk_wiz_1 (clk_wiz_1.xci), clk_wiz_1 (clk_wiz_1.v)]", 11); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd), Audio_Codec : Audio_Codec_Wrapper(Behavioral) (Audio_Codec_Wrapper.vhd), audiocodec_master_clock : clk_wiz_1 (clk_wiz_1.xci)]", 10); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd), Audio_Codec : Audio_Codec_Wrapper(Behavioral) (Audio_Codec_Wrapper.vhd)]", 8); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd), lab4_dp_inst : lab4_datapath(Behavioral) (lab4_dp.vhd)]", 7); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd), win_sound_inst : lab4(behavior) (lab4.vhd)]", 6); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, my_graphics_ip_v1_0(arch_imp) (my_graphics_ip_v1_0.vhd), my_graphics_ip_v1_0_S00_AXI_inst : my_graphics_ip_v1_0_S00_AXI(arch_imp) (my_graphics_ip_v1_0_S00_AXI.vhd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("my_graphics_ip_v1_0_S00_AXI.vhd", 633, 249); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // u (O, ck)
+// bx (ck):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+dismissDialog("Open Project Manager"); // bx (ck)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ao (O, ck)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, ck)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao (O, ck)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE, "IP has been modified."); // h (M, ck)
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 8 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bx (ck):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 975 MB. GUI used memory: 115 MB. Current time: 5/3/24 1:57:52 AM MDT
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bx (ck)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/ip_repo/my_graphics_ip_1.0' 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_clock_1 
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// bx (ck):  Upgrade IP : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:my_graphics_ip:1.0 [get_ips  design_1_my_graphics_ip_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded design_1_my_graphics_ip_0_0 (my_graphics_ip_v1.0 1.0) from revision 7 to revision 8 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips design_1_my_graphics_ip_0_0] -no_script -sync -force -quiet 
+// aI (ck): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 56 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 991 MB. GUI used memory: 117 MB. Current time: 5/3/24 1:59:12 AM MDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// [Engine Memory]: 1,062 MB (+52671kb) [01:29:25]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0x9FFFFFFF. INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0x9FFFFFFF. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,159 MB (+45700kb) [01:29:30]
+// Tcl Message: Wrote  : <C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/design_1.bd>  VHDL Output written to : C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 . 
+// Elapsed time: 330 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+// Tcl Message: INFO: [Common 17-365] Interrupt caught but 'generate_target' cannot be canceled. Please wait for command to finish. 
+// Elapsed time: 103 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+closeMainWindow("final_project_v1 - [C:/Users/kaush/Documents/ECE383_Dan/Final_Project/Code/v1/final_project_v1.xpr] - Vivado 2018.2"); // ck
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'
